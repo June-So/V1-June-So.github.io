@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('source-sans-pro/SourceSansPro-Regular.otf')
+}
+
+body{
+  background-image:url(http://www.aadhunikschool.in/wp-content/uploads/Grey-website-background-1024x575.jpg);
+  background-size: cover;
+  color: #FFF;
+  font-family: SourceSansPro;
+}
+
+header{
+  text-align: center;
+  height: auto;
+}
+
+header img{
+  border: 2px solid white;
+  box-shadow: 6px 6px 10px black;
+}
+
+h1, h1+p{
+  margin: 0px;
+}
