@@ -11,15 +11,43 @@ body{
 }
 
 header{
-  text-align: center;
-  height: auto;
+  height: 117px;
+  padding: 30 0px;
 }
 
 header img{
+  position:absolute;
+  top: 8px;
+  left: 8px;
   border: 2px solid white;
   box-shadow: 6px 6px 10px black;
 }
 
 h1, h1+p{
+  text-align: center;
   margin: 0px;
+}
+
+#conteneur{
+  padding: 0px 50px;
+  height: auto;
+}
+
+h2{
+  text-align:center;
+}
+.colonnes{
+  float: right;
+  width: 25%;
+  min-width: 200px;
+  height: 300;
+}
+
+.colonnes ul{
+  margin: auto;
+  width: 80%;
+}
+
+.formation{
+  width: 50%;
 }
