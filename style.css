@@ -8,6 +8,7 @@ body{
   background-image:url(Images/Grey-website-background.jpg);
   font-family: SourceSansPro;
   margin: 0px;
+  padding-bottom: 100px;
 }
 
 header{
@@ -34,21 +35,11 @@ h1, h1+p{
 
 #section{
     width: 100%;
-    height: 600px;
+    height: 90%;
     color: darkgrey;
     background-color: #FFEFFF;
     box-shadow: 0px 42px 1px rgba(0, 0, 0, 0.2);
-}
-
-.info{
-    width:20px;
-    height: 20px;
-    border: 1px solid darkblue;
-    border-radius: 5px;
-    background-color: lightblue;
-    overflow: hidden;
-}
-
+  }
 
 h2{
   margin: 42px 0px;
@@ -60,28 +51,110 @@ h2{
   float: left;
   width: 50%;
   min-width: 200px;
-  height: 300px;
+  height: 250px;
 }
 
 
 .competences{
+  height: 420px;
   width: 80%;
   margin: 0px 10%;
   text-align:center;
 }
 
-.competences li{
+.competences .icon_unit{
   display: inline-block;
   margin: 2%;
+}
+
+.icon_unit{
+  vertical-align: text-top;
+}
+
+.jauge{
+  clear:both;
+  position: relative;
+  bottom: 48px;
+  left: 220px;
+  width: 5px;
+  height: 46px;
+  max-width: 595px;
+  background-color: #94f3e4;
+}
+
+.jauge_fond{
+  margin: 0px auto;
+  width: 600px;
+  height:50px;
+  background-color: grey;
+}
+
+.blocComp_fond{
+  width: 400px;
+  height: 40px;
+  background-color: #1a1a1b;
+  margin: 10px auto;
+  padding: auto;
+  vertical-align: top;
+}
+
+.blocComp_fond p{
+  color: #94f3e4;
+}
+/* Survol des icones*/
+
+.fa:hover ~ .hidden{
+  display: block;
 }
 
 .fa:hover{
   color: #37aa9c;
 }
 
+.icon_unit:hover ~ .jauge{
+  transition: width 2s;
+}
+
+.icon_unit:hover ~ .blocComp_fond{
+    width: 600px;
+    height: 222px;
+    transition: width 1s;
+}
+
+/* -- Personalisation survol -- */
+.linux:hover ~ .jauge{
+  width: 10%;
+}
+
+.git:hover ~ .jauge{
+  width: 20%;
+}
+
+.github:hover + .jauge{
+  width: 40%;
+}
+
+.html:hover ~ .jauge{
+  width: 480px;
+  transition: width 2s;
+}
+
+.css3:hover ~ .jauge{
+  width: 50%;
+}
+
+.php:hover + .jauge{
+  width: 5%;
+}
+
+.atom:hover ~ .jauge{
+  width: 70%;
+}
+
+/* fin survol des icones */
+
 .formation{
   width: 49%;
-  border-left: 2px solid lightgrey;
   border-right: 2px solid lightgrey;
 }
 
