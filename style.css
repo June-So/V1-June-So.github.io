@@ -4,15 +4,18 @@
 }
 
 body{
-  background-image:url(http://www.aadhunikschool.in/wp-content/uploads/Grey-website-background-1024x575.jpg);
-  background-size: cover;
-  color: #FFF;
+  background-image:url(Images/Grey-website-background.jpg);
   font-family: SourceSansPro;
+  margin: 0px;
 }
 
 header{
-  height: 117px;
-  padding: 30 0px;
+  margin: 0px;
+  height: 95px;
+  padding: 20px;
+  color: #FFF;
+  background-image: url(Images/header.jpg);
+  background-size: cover;
 }
 
 header img{
@@ -28,16 +31,36 @@ h1, h1+p{
   margin: 0px;
 }
 
-#conteneur{
-  padding: 0px 50px;
-  height: auto;
+#section{
+    width: 100%;
+    height: 400px;
+    color: darkgrey;
+    background-color: #FFEFFF;
+}
+
+.info{
+    width:20px;
+    height: 20px;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    background-color: lightblue;
+    overflow: hidden;
+}
+
+.info:hover{
+    width:auto;
+    height: auto;
+    overflow:
 }
 
 h2{
+  margin: 42px 0px;
   text-align:center;
+  text-decoration: underline;
 }
+
 .colonnes{
-  float: right;
+  float: left;
   width: 25%;
   min-width: 200px;
   height: 300;
@@ -45,9 +68,19 @@ h2{
 
 .colonnes ul{
   margin: auto;
-  width: 80%;
+  width: 142px;
 }
 
 .formation{
-  width: 50%;
+  width: 49%;
+  border-left: 2px solid lightgrey;
+  border-right: 2px solid lightgrey;
+}
+
+.formation ul{
+  width: 400px;
+}
+
+em{
+/*haute casse + bold*/
 }
