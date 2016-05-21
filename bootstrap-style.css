@@ -41,10 +41,23 @@ h2{
 
 
 .liste_comp{
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+
+.icon_unit{
+  display: inline-block;
+  width: 60px;
+  vertical-align: text-top;
+}
+
+.jaugeFull{
+    width: 90%;
+    margin: 20px auto 0px;
+}
+
   .jauge{
     width:5px;
     height: 46px;
@@ -60,10 +73,17 @@ h2{
   }
 
   .blocComp_fond{
-    height: 32px;
+    width: 70%;
+    height: 40px;
     background-color: #1a1a1b;
+    margin: 10px auto;
+    padding: auto;
+    vertical-align: top;
   }
 
+  .blocComp_fond p{
+    color: #94f3e4;
+  }
 .formation,.interets{
   height: 200px;
   margin-top: 42px;
@@ -75,3 +95,50 @@ h2{
   .formation{
     border-right: 2px solid lightgrey;
   }
+
+  /* Survol des icones*/
+
+  .fa:hover{
+    color: #37aa9c;
+  }
+
+  .icon_unit:hover ~ .jaugeFull .jauge{
+    transition: width 2s;
+  }
+
+  .icon_unit:hover ~ .blocComp_fond{
+      height: 222px;
+      transition: width 1s;
+  }
+
+  /* -- Personalisation survol -- */
+  .linux:hover ~ .jaugeFull .jauge{
+    width: 10%;
+  }
+
+  .git:hover ~ .jaugeFull .jauge{
+    width: 20%;
+  }
+
+  .github:hover ~ .jaugeFull .jauge{
+    width: 40%;
+  }
+
+  .html:hover ~ .jaugeFull .jauge{
+    width: 480px;
+    transition: width 2s;
+  }
+
+  .css3:hover ~ .jaugeFull .jauge{
+    width: 50%;
+  }
+
+  .php:hover + .jaugeFull .jauge{
+    width: 5%;
+  }
+
+  .atom:hover ~ .jaugeFull .jauge{
+    width: 70%;
+  }
+
+  /* fin survol des icones */
