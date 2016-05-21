@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('source-sans-pro/SourceSansPro-Regular.otf')
+}
+
+body{
+  font-family: SourceSansPro;
+  background-image:url(Images/Grey-website-background.jpg);
+}
+
+header{
+  color: #FFF;
+  background-image: url(Images/header.jpg);
+  background-size: cover;
+  height: 149px;
+  padding: 8px 0px;
+}
+
+header img{
+  float:left;
+  border: 2px solid white;
+  box-shadow: 6px 6px 10px black;
+}
+
+h1, h1+p{
+  text-align: center;
+}
+
+h2{
+  margin: 38px 0px;
+  font-size:28px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#section{
+    color: darkgrey;
+    background-color: #FFEFFF;
+    box-shadow: 0px 42px 1px rgba(0, 0, 0, 0.2);
+  }
+
+
+.liste_comp{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+  .jauge{
+    width:5px;
+    height: 46px;
+    max-width: 100%;
+    background-color: #94f3e4;
+  }
+
+  .jauge_fond{
+    padding: 2px;
+    margin: 12px 0px;
+    height:50px;
+    background-color: grey;
+  }
+
+  .blocComp_fond{
+    height: 32px;
+    background-color: #1a1a1b;
+  }
+
+.formation,.interets{
+  height: 200px;
+  margin-top: 42px;
+}
+
+.formation h2,.interets h2{
+  margin: 0px 0px 38px;
+}
+  .formation{
+    border-right: 2px solid lightgrey;
+  }
