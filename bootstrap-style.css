@@ -53,6 +53,14 @@ h2{
   vertical-align: text-top;
 }
 
+.devicon-size{
+  font-size: 42px;
+}
+
+.detail_devicon-size{
+  font-size: 56px;
+}
+
 .jaugeFull{
     width: 90%;
     margin: 20px auto 0px;
@@ -73,17 +81,39 @@ h2{
   }
 
   .blocComp_fond{
-    width: 70%;
-    height: 40px;
+    width:90%;
+    height: auto;
     background-color: #1a1a1b;
+    color: #37aa9c;
     margin: 10px auto;
-    padding: auto;
-    vertical-align: top;
+    padding: 10px;
   }
 
-  .blocComp_fond p{
-    color: #94f3e4;
+  .blocComp_fond .unlocked{
+    color: darkgrey;
   }
+
+.detail{
+    padding: 5px;
+    display: none;
+}
+
+.detail_defaut{
+  text-align: center;
+}
+
+h3{
+  margin-top: 5px;
+  font-size: 36px;
+}
+
+
+.pourcent{
+  float:left;
+  font-size: 36px;
+  margin-right: 8px;
+}
+
 .formation,.interets{
   height: 200px;
   margin-top: 42px;
@@ -98,7 +128,7 @@ h2{
 
   /* Survol des icones*/
 
-  .fa:hover{
+  .fa:hover, .devicon-size:hover{
     color: #37aa9c;
   }
 
@@ -107,38 +137,77 @@ h2{
   }
 
   .icon_unit:hover ~ .blocComp_fond{
-      height: 222px;
+      height:auto;
       transition: width 1s;
+  }
+
+  .icon_unit:hover ~ .blocComp_fond .detail_defaut{
+    display: none;
   }
 
   /* -- Personalisation survol -- */
   .linux:hover ~ .jaugeFull .jauge{
     width: 10%;
   }
+  .linux:hover ~ .blocComp_fond .detail_linux{
+    display:block;
+  }
 
   .git:hover ~ .jaugeFull .jauge{
     width: 20%;
+  }
+  .git:hover ~ .blocComp_fond .detail_git{
+    display: block;
   }
 
   .github:hover ~ .jaugeFull .jauge{
     width: 40%;
   }
+  .github:hover ~ .blocComp_fond .detail_github{
+    display:block;
+  }
 
   .html:hover ~ .jaugeFull .jauge{
-    width: 480px;
+    width: 80%;
     transition: width 2s;
+  }
+  .html:hover ~ .blocComp_fond .detail_html{
+    display: block;
   }
 
   .css3:hover ~ .jaugeFull .jauge{
     width: 50%;
   }
-
-  .php:hover + .jaugeFull .jauge{
-    width: 5%;
+  .css3:hover ~ .blocComp_fond .detail_css{
+    display: block;
   }
 
+  .php:hover ~ .jaugeFull .jauge{
+    width: 5%;
+  }
+  .php:hover ~ .blocComp_fond .detail_php{
+    display: block;
+  }
+
+  .photoshop:hover ~ .jaugeFull .jauge{
+    width: 50%;
+  }
+.photoshop:hover ~ .blocComp_fond .detail_photoshop{
+    display: block;
+}
+
   .atom:hover ~ .jaugeFull .jauge{
-    width: 70%;
+    width: 60%;
+  }
+  .atom:hover ~ .blocComp_fond .detail_atom{
+    display: block;
+  }
+
+  .bootstrap:hover ~ .jaugeFull .jauge{
+    width: 10%;
+  }
+  .bootstrap:hover ~ .blocComp_fond .detail_bootstrap{
+    display: block;
   }
 
   /* fin survol des icones */
