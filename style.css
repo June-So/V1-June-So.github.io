@@ -210,10 +210,17 @@ h3{
   }
 
   .bootstrap:hover ~ .jaugeFull .jauge{
-    width: 15%;
+    width: 30%;
   }
   .bootstrap:hover ~ .blocComp_fond .detail_bootstrap{
     display: block;
+  }
+
+  .javascript:hover ~ .jaugeFull .jauge{
+    width: 36%;
+  }
+  .javascript:hover ~ .blocComp_fond .detail_javascript{
+    display:block;
   }
 
   /* fin survol des icones */
@@ -224,7 +231,7 @@ h3{
         height: auto;
         padding: 20px;
   }
-  
+
   .footer_contact h2{
       font-size: 24px;
       margin: 0px 0px 12px;
